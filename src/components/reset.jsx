@@ -32,9 +32,9 @@ const Login = () => {
           <div className="mb-4">
             <input
               className="bg-white rounded-md w-full py-2 px-3 "
-              id="username"
-              type="text"
-              placeholder="Username"
+              id="passsword"
+              type="password"
+              placeholder="********"
             />
           </div>
           <p className="text-center mb-4">Confirm new password</p>
@@ -43,7 +43,7 @@ const Login = () => {
               className="bg-white rounded-md w-full py-2 px-3 "
               id="password"
               type="password"
-              placeholder="*********"
+              placeholder="********"
             />
           </div>
 
