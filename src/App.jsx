@@ -3,6 +3,8 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Terms from './components/terms';
 import LandingPage from './landingpage/landingpage';
+import Forgot from './components/forgot';
+import Reset from './components/reset';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot" element={<Forgot />} />
+        <Route path="/reset" element={<Reset />} />
       </Routes>
       </BrowserRouter>
     </div>
