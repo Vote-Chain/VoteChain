@@ -28,7 +28,22 @@ const Login = () => {
           <img src={Avatar} alt="Login" className="mb-4 ml-4" />
           <h1 className="font-bold mt-2 text-center">Login</h1>
           <p className="text-center mb-4">To get started, first login</p>
-          {/* Rest of your login form */}
+          <div className="mb-4">
+            <input
+              className="bg-white rounded-md w-full py-2 px-3 "
+              id="username"
+              type="text"
+              placeholder="Username"
+            />
+          </div>
+          <div className="mb-6">
+            <input
+              className="bg-white rounded-md w-full py-2 px-3 "
+              id="password"
+              type="password"
+              placeholder="*********"
+            />
+          </div>
           <p className="text-red mb-4">Forgot password?</p>
 
           <div className="flex items-center justify-between">

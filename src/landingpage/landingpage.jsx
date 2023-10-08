@@ -3,7 +3,7 @@ import Avatar1 from '../assets/welcomepage.svg'
 
 const login = () => {
   const handlestart = () => {
-    window.location.href = '/login'
+    window.location.href = '/terms'
   }
   return (
     <div className="min-h-screen bg-gray flex flex-col justify-center">
