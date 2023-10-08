@@ -1,5 +1,7 @@
 import React from 'react'
 import Avatar1 from '../assets/welcomepage.svg' 
+import { Link } from 'react-router-dom';
+
 
 const login = () => {
   const handlestart = () => {
@@ -13,7 +15,12 @@ const login = () => {
         {/* <img src= {Avatar1} alt="Login" className="mb-4 ml-4" /> */}
         <img src= {Avatar1} alt="Login" className="mb-4 ml-4" />
         <h1 className='font-bold mt-2 text-center'>Votechain</h1>
-        <p className='text-center mb-4 mt-4'>Welcome to Votechain! to proceed here </p>
+        <p className='text-center mb-4 mt-4'>Welcome to Votechain!</p>
+        <p className="text-center mb-4">Already have an account? 
+        <span className="text-red">
+        <Link to="/login" className="text-red">Click here</Link>
+        </span>
+        </p>
            
          
           <div className="flex items-center justify-between">

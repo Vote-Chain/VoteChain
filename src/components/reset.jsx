@@ -27,8 +27,8 @@ const Login = () => {
       <div className="m-auto">
         <form className="bg-gray">
           <img src={Avatar} alt="Login" className="mb-4 ml-4" />
-          <h1 className="font-bold mt-2 text-center">Login</h1>
-          <p className="text-center mb-4">To get started, first login</p>
+          <h1 className="font-bold mt-2 text-center">Forgot Password</h1>
+          <p className="text-center mb-4 mt-2">Enter new password</p>
           <div className="mb-4">
             <input
               className="bg-white rounded-md w-full py-2 px-3 "
@@ -37,6 +37,7 @@ const Login = () => {
               placeholder="Username"
             />
           </div>
+          <p className="text-center mb-4">Confirm new password</p>
           <div className="mb-6">
             <input
               className="bg-white rounded-md w-full py-2 px-3 "
@@ -45,21 +46,21 @@ const Login = () => {
               placeholder="*********"
             />
           </div>
-          <p className="text-center mb-4">Forgot Password? 
-        <span className="text-red">
-        <Link to="/forgot" className="text-red">Click here</Link>
-        </span>
-        </p>
 
-          <div className="flex items-center justify-between">
-          <link to="/signup" />
-            <button
-              className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Login
-            </button>
-          </div>
+          <div className="mt-4 text-centre">
+                        {
+                            //  acceptedTerms &&
+                            (
+                                <Link to="/login">
+                                    <button
+                                        className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                                        type="button"
+                                    >
+                                        Proceed
+                                    </button>
+                                </Link>
+                            )}
+                    </div>
         </form>
       </div>
     </div>
