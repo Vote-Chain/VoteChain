@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '../assets/avatar.svg';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -46,15 +47,20 @@ const Login = () => {
             />
           </div>
 
-          <div className="flex items-center justify-between">
-          <link to="/signup" />
-            <button
-              className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Login
-            </button>
-          </div>
+          <div className="mt-4 text-centre">
+                        {
+                            //  acceptedTerms &&
+                            (
+                                <Link to="/login">
+                                    <button
+                                        className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                                        type="button"
+                                    >
+                                        Proceed
+                                    </button>
+                                </Link>
+                            )}
+                    </div>
         </form>
       </div>
     </div>

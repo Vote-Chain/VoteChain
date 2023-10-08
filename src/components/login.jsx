@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from '../assets/avatar.svg';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -44,7 +45,11 @@ const Login = () => {
               placeholder="*********"
             />
           </div>
-          <p className="text-red mb-4">Forgot password?</p>
+          <p className="text-center mb-4">Forgot Password? 
+        <span className="text-red">
+        <Link to="/forgot" className="text-red">Click here</Link>
+        </span>
+        </p>
 
           <div className="flex items-center justify-between">
           <link to="/signup" />
