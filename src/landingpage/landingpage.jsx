@@ -17,12 +17,13 @@ const login = () => {
            
          
           <div className="flex items-center justify-between">
-          <link to="/login" />
+          
             <button
             onClick={handlestart}
               className="mt-5 justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
               type="button"
             >
+              <link to="/terms" />
               Get started
             </button>
           </div>
@@ -32,4 +33,4 @@ const login = () => {
   )
 }
 
-export default login
+export default login;

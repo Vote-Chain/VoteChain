@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from '../assets/avatar.svg';
 
+
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 py-4">
@@ -12,8 +13,8 @@ const Navbar = () => {
         {/* You can add navigation links or other navigation items here */}
       </div>
     </nav>
-  );
-};
+  )
+}
 
 const Login = () => {
   return (
@@ -29,7 +30,9 @@ const Login = () => {
           <p className="text-center mb-4">To get started, first login</p>
           {/* Rest of your login form */}
           <p className="text-red mb-4">Forgot password?</p>
+
           <div className="flex items-center justify-between">
+          <link to="/signup" />
             <button
               className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
               type="button"
