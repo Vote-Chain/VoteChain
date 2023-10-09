@@ -16,7 +16,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/VerificationPage" element={<Verification />} />
+        <Route path="/Verification" element={<Verification />} />
         <Route path="/OTP" element={<OTP />} />
       </Routes>
       </BrowserRouter>
