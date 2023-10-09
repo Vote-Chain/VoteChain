@@ -2,6 +2,21 @@ import React, { useState, useEffect } from 'react';
 import Avatar from '../assets/avatar.svg';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+
+const Navbar = () => {
+  return (
+    <nav className="bg-gray-800 py-4">
+      <div className="container mx-auto flex justify-end items-center">
+        <button className="text-2xl font-bold bg-transparent border-none hover:text-red transition-colors duration-300 font-Baloo Da 2">Home</button>
+        {/* You can add navigation links or other navigation items here */}
+        <div className="w-4"></div>
+        <button className="text-2xl font-bold bg-transparent border-none hover:text-red transition-colors duration-300 font-Baloo Da 2">Voting</button>
+        {/* You can add navigation links or other navigation items here */}
+      </div>
+    </nav>
+  )
+}
+
 const Verification = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -79,6 +94,7 @@ const Verification = () => {
       <div className="m-auto">
         <form className="bg-gray" onSubmit={handleSubmit}>
           <img src={Avatar} alt="Login" className="mb-4 ml-4" />
+          <Navbar /> {/* Include the Navbar component here */}
           <h1 className="font-bold mt-2 text-center">Verification</h1>
           <p className="text-center mb-4">
             To continue, you have to verify your identity

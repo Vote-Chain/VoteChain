@@ -2,6 +2,21 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Avatar from '../assets/avatar.svg';
 import { useNavigate } from 'react-router-dom';
+
+const Navbar = () => {
+  return (
+    <nav className="bg-gray-800 py-4">
+      <div className="container mx-auto flex justify-end items-center">
+        <button className="text-2xl font-bold bg-transparent border-none hover:text-red transition-colors duration-300 font-Baloo Da 2">Home</button>
+        {/* You can add navigation links or other navigation items here */}
+        <div className="w-4"></div>
+        <button className="text-2xl font-bold bg-transparent border-none hover:text-red transition-colors duration-300 font-Baloo Da 2">Voting</button>
+        {/* You can add navigation links or other navigation items here */}
+      </div>
+    </nav>
+  )
+}
+
 const OTP = () => {
   const navigate = useNavigate();
 
@@ -27,6 +42,7 @@ const OTP = () => {
       <div className="m-auto">
         <form className="bg-gray">
           <img src={Avatar} alt="Login" className="mb-4 ml-4" />
+          <Navbar /> {/* Include the Navbar component here */}
           <h1 className="font-bold mt-2 text-center">Verification</h1>
           <p className="text-center mb-4">
             ID confirmed! To continue, enter the OTP sent to{' '}
