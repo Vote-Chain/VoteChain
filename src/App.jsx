@@ -8,6 +8,7 @@ import Reset from './components/reset';
 import IDPhotoCapture from './components/captureid';
 
 
+
 function App() {
   return (
     <div className="App">
