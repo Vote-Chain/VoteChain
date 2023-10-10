@@ -57,7 +57,7 @@ const Login = () => {
                     {
                         //  acceptedTerms &&
                         (
-                            <Link to="/login">
+                            <Link to="/signup">
                                 <button
                                     className="bg-red text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
                                     type="button"

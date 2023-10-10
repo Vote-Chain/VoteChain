@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from '../assets/avatar.svg';
-import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -18,7 +19,8 @@ const Navbar = () => {
 
 const signup = () => {
   const handleLogin = () => {
-    Navigate('/signup');
+    // Navigate('/capture');
+    window.location.href = '/capture'
   }
 
   return (
@@ -64,13 +66,18 @@ const signup = () => {
               placeholder="Confirm Password"
             />
           </div>
-          <p className="text-center mb-4">Already have an account? <span className="text-red">Login</span></p>
+          <p className="text-center mb-4">Already have an account?
+            <span className="text-red">
+              <Link to="/login" className="text-red">Login</Link>
+            </span>
+          </p>
           <div className="flex items-center justify-between">
             <button
               onClick={handleLogin}
               className="justify-center bg-red shadow-red ml-12 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
               type="button"
             >
+              <link to="/terms" />
               Login
             </button>
           </div>
